@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Classic-Interio-React/static/css/main.3815e316.css",
+    "main.js": "/Classic-Interio-React/static/js/main.2b88d37d.js",
+    "static/js/453.9496fc14.chunk.js": "/Classic-Interio-React/static/js/453.9496fc14.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Classic-Interio-React/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/Classic-Interio-React/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Classic-Interio-React/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/Classic-Interio-React/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Classic-Interio-React/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/kitchen.avif": "/Classic-Interio-React/static/media/kitchen.72cc44fd29449e1b748f.avif",
+    "index.html": "/Classic-Interio-React/index.html",
+    "main.3815e316.css.map": "/Classic-Interio-React/static/css/main.3815e316.css.map",
+    "main.2b88d37d.js.map": "/Classic-Interio-React/static/js/main.2b88d37d.js.map",
+    "453.9496fc14.chunk.js.map": "/Classic-Interio-React/static/js/453.9496fc14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3815e316.css",
+    "static/js/main.2b88d37d.js"
+  ]
+}

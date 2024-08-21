@@ -1,0 +1,474 @@
+body {
+  position: relative;
+  
+}
+.phone-icon {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 1000; /* Ensure the icon is above other elements */
+}
+
+.phone-icon img {
+  width: 60px; /* Adjust the width and height as needed */
+  height: 60px;
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure the icon is above other elements */
+}
+
+.whatsapp-icon img {
+  width: 60px; /* Adjust the width and height as needed */
+  height: 60px;
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.arrow-icon{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure the icon is above other elements */
+}
+
+.arrow-icon img {
+  width: 63px; /* Adjust the width and height as needed */
+  height: 57px;
+  border-radius: 50%; /* Make it circular */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  */
+  /* Add a subtle shadow */
+}
+.navbar-brand img {
+    max-height: 50px; /* Adjust the height of the logo */
+}
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    color: #333; /* Change navbar link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #eb4d4b; /* Change underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar-nav .nav-item .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* home */
+.homepage {
+    background-image: url('images/background.jpg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* Change text color */
+    text-align: center;
+}
+.homepage-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.homepage-paragraph {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.homepage-buttons {
+    display: flex;
+    justify-content: center;
+}
+.homepage .btn {
+    background-color: transparent; 
+    color: white;
+    border: 2px solid #eb4d4b;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.homepage .btn:hover {
+    background-color: #eb4d4b;
+    color: white; 
+}
+/* contact */
+.m-last{
+  position: relative;
+  background-image: url(images/bk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+.m-last div{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.last div h1{
+  font-size: 35px;
+}
+.last div button{
+  font-size: 25px;
+  color: black;
+  transition: .5s;
+}
+.last div button{
+  font-size: 25px;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #eb595f;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+.last div button:hover{
+  background-color: #eb595f;
+  color: white;
+}
+
+/* why choose us? */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* home interiors */
+.centered {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
+}
+.image-container {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* safe experience */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* clients  */
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+/* dream home */
+.btnn-custom {
+  color: #eb4d4b;
+  background-color: transparent;
+  border: 2px solid #eb4d4b;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  height: 45px;
+  border-radius: 30px;
+}
+.btnn-custom:hover {
+  background-color: #eb4d4b;
+  color: white;
+}
+.clients{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f2f2f2;
+}
+
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+  
+}
+.logos{
+  overflow: hidden;
+  padding: 60px 0 ;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+.logos::before,
+.logos:after {
+
+}
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+} 
+.logos-slide{
+  display: inline-block;
+  
+  animation: 25s slide infinite linear;
+}
+.logos-slide img{
+  height: 50px;
+  margin: 0 40px;
+}
+.d1{
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.d1 div{
+  width: 550px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin: 0 0 70px 0;
+}
+.d1 div img{
+  display: block;
+  width: inherit;
+  transition: .5s;
+  cursor: pointer;
+}
+.d1 img:hover{
+  transform: scale(1.05);
+}
+.d1 div h2{
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-size: 25px;
+}
+.d1 div span{
+  font-size: 25px;
+}
+.d1 div button{
+  cursor: pointer;
+  font-size: 15px;
+  background: #ffffff;
+  border: 2px solid #eb595f;
+  padding: 10px;
+  margin: 0 0 0 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: .5s;
+  bottom: 10px;
+  right: 10px;
+}
+.d1 div button:hover{
+  color: #ffffff;
+  background: #eb595f;
+}
+.last{
+  position: relative;
+  background-image: url('source/bk.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+.last div{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.last div h1{
+  font-size: 35px;
+}
+.last div button{
+  font-size: 25px;
+  color: black;
+  transition: .5s;
+}
+.last div button{
+  font-size: 25px;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #eb595f;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+.last div button:hover{
+  background-color: #eb595f;
+  color: white;
+}
+/* footer */ 
+.footer {
+            position: relative;
+            padding: 0 0 30px 0;
+            background: #333;
+        }
+        
+        .footer .footer-top {
+            background: #eb4d4b;
+            padding: 60px 0 30px 0;
+        }
+        
+        .footer .footer-top .footer-info,
+        .footer .footer-top .footer-links,
+        .footer .footer-top .footer-contact,
+        .footer .footer-top .footer-newsletter {
+            margin-bottom: 30px;
+        }
+        
+        .footer .footer-top .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #ffffff;
+            color: #eb4d4b;
+            line-height: 1;
+            padding: 9px 0;
+            margin-right: 4px;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+        }
+        
+        .footer .footer-top .social-links a:hover {
+            background: #d9403d;
+            color: #ffffff;
+        }
+        
+        .footer .footer-top h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .footer .footer-top h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 50px;
+            border-bottom: 2px solid #ffffff;
+        }
+        
+        .footer .footer-top .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer .footer-top .footer-links ul i {
+            padding-right: 8px;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .footer .footer-top .footer-links ul li {
+            border-bottom: 1px solid #ffffff;
+            padding: 7px 0;
+        }
+        
+        .footer .footer-top .footer-links ul li:first-child {
+            padding-top: 0;
+        }
+        
+        .footer .footer-top .footer-links ul a {
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .footer .footer-top .footer-links ul a:hover {
+            color: #00bfff;
+        }
+        
+        .footer .footer-top .footer-contact p {
+            color: #ffffff;
+            line-height: 26px;
+        }
+        
+        .footer .footer-top .footer-newsletter input[type="email"] {
+            padding: 6px 8px;
+            width: 60%;
+            border: 1px solid #ffffff;
+            background: transparent;
+            color: #ffffff;
+        }
+        
+        .footer .footer-top .footer-newsletter input[type="submit"] {
+            border: 0;
+            width: 40%;
+            padding: 6px 0;
+            text-align: center;
+            color: black;
+            border: 1px solid #ffffff;
+            background: #ffffff;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .footer .footer-top .footer-newsletter input[type="submit"]:hover {
+            color: #ffffff;
+            background: #00bfff;
+            border: 1px solid #d9403d;
+            letter-spacing: .2rem;
+        }
+        
+        .footer .footer-top .footer-newsletter p {
+            color: #ffffff;
+            font-size: 14px;
+        }
+        
+        .footer .credit,
+        .footer .copyright {
+            text-align: center;
+            padding-top: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .footer .credit {
+                text-align: right;
+            }
+            
+            .footer .copyright {
+                text-align: left;
+            }
+          }
